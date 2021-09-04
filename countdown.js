@@ -17,6 +17,10 @@ const countdown = () => {
     document.querySelector('.hour').innerText = textHour.toString().padStart(2, '0');
     document.querySelector('.minute').innerText = textMinute.toString().padStart(2, '0');
     document.querySelector('.second').innerText = textSecond.toString().padStart(2, '0');
+
+    if (gap <= 0) {
+        window.location = 'https://www.mindjuswear.com.br';
+    }
 }
 
 countdown();
